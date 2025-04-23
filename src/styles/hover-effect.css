@@ -1,0 +1,29 @@
+.box__animation::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: var(--gradient-box);
+    width: 200%;
+    height: 200%;
+    top: var(--y);
+    left: var(--x);
+    opacity: 0;
+    transition: 0.5s, top 0s, left 0s;
+}
+
+.box__animation:hover::before {
+    opacity: 1;
+}
+
+.box__animation::after {
+    content: "";
+    position: absolute;
+    background: var(--color-black-secondary);
+    border-radius: 1.25rem;
+    inset: 2px;
+}
+
+.box__animation>* {
+    position: relative;
+    z-index: 1;
+}
