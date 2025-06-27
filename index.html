@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/hover-effect.css">
+    <link rel="stylesheet" href="src/styles/media-queries.css">
+
+    <title>Jean Carlo Balduino - Desenvolvedor</title>
+    <link rel="icon" type="image/png" href="./src/assets/img/favicon.png">
+</head>
+
+<body>
+
+    <div id="overlay" class="overlay"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="./src/assets/img/logo.png" alt="Logo" aria-hidden="true">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Início</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#skill" class="nav__link">Habilidades</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Projetos</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x bx-sm'></i>
+                </div>
+
+                <!-- Social media button -->
+                <div class="menu__socialmedia">
+                    <p class="social__title">Mídias sociais</p>
+
+                    <div class="social__link">
+                        <a target="_blank" href="https://www.linkedin.com/in/jean-carlo-balduino-10a729b6/"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a target="_blank" href="https://github.com/JeanCarlo10"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- ===== HOME ===== -->
+        <section class="home" id="home">
+            <img src="./src/assets/img/img_home.webp" alt="" class="home__bg">
+
+            <div class="home__container container bd-grid">
+                <div class="home__data">
+                    <p class="home__title">
+                        TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span>
+                    </p>
+
+                    <p class="home__subtitle">Soluções inteligentes, com foco em
+                        usabilidade, performance e resultados que impulsionam o seu negócio.
+                    </p>
+
+                    <div class="home__social-link">
+                        <a target="_blank" href="https://www.linkedin.com/in/jean-carlo-balduino-10a729b6/"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a target="_blank" href="https://github.com/JeanCarlo10"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+                <a href="#portfolio" class="background__btn contact_rotate__btn">
+                    <i class='bx bxs-downvote'></i>
+                    <p>MEUS PROJETOS • MEUS PROJETOS</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="about section container" id="about">
+            <span class="section-subtitle">MINHA HISTÓRIA</span>
+            <h2 class="section-title">Sobre mim</h2>
+
+            <div class="about__container">
+                <div class="about__data bd-grid">
+                    <p class="about__description">
+                        Olá! Seja bem-vindo ao meu espaço digital.<br>
+                        Sou Jean Carlo Balduino, desenvolvedor de sistemas com mais de 6 anos de experiência e formado
+                        em Sistemas de Informação.
+                    </p>
+                    <p class="about__description">
+                        Atuo na criação de soluções personalizadas para empresas e profissionais que desejam otimizar
+                        processos, melhorar a produtividade e alcançar melhores resultados com o apoio da tecnologia.
+                    </p>
+                    <p class="about__description">
+                        Meu trabalho é guiado por três pilares: qualidade, eficiência e compromisso com prazos. Busco
+                        entender a fundo as necessidades de cada cliente para entregar sistemas seguros e de
+                        fácil manutenção, sempre mantendo um relacionamento transparente e profissional ao longo de
+                        cada projeto.
+                    </p>
+                    <p class="about__description">
+                        Estou aberto a novos desafios e pronto para contribuir com o crescimento do seu negócio por meio
+                        da tecnologia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILL ===== -->
+        <section class="skill section container" id="skill">
+            <span class="section-subtitle">TECNOLOGIAS</span>
+            <h2 class="section-title">Minhas habilidades</h2>
+
+            <div class="skill__container">
+                <div class="skill__box">
+                    <img src="./src/assets/img/icon-css.svg" class="skill__icon" alt="Ícone CSS" />
+                    <span>CSS</span>
+                </div>
+
+                <div class="skill__box">
+                    <img src="./src/assets/img/icon-html.svg" class="skill__icon" alt="Ícone HTML" />
+                    <span>HTML</span>
+                </div>
+
+                <div class="skill__box">
+                    <img src="./src/assets/img/icon-javascript.svg" class="skill__icon" alt="Ícone Javascript" />
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="skill__box">
+                    <img src="./src/assets/img/icon-mendix.svg" class="skill__icon" alt="Ícone Mendix" />
+                    <span>Mendix</span>
+                </div>
+
+                <div class="skill__box">
+                    <img src="./src/assets/img/icon-react.svg" class="skill__icon" alt="Ícone React" />
+                    <span>React</span>
+                </div>
+
+                <div class="skill__box">
+                    <img src="./src/assets/img/icon-sass.svg" class="skill__icon" alt="Ícone SASS" />
+                    <span>SASS</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===== PORTFOLIO ===== -->
+        <section class="portfolio section container" id="portfolio">
+            <span class="section-subtitle">PORTFÓLIO</span>
+            <h2 class="section-title">Principais projetos</h2>
+
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__content">
+                    <a href="https://tinyurl.com/yu38wufx" target="_blank"><img
+                            src="./src/assets/img/img_portfolio_headphone.webp" class="portfolio__img" alt
+                            aria-hidden="true">
+                    </a>
+                    <div class="portfolio__data">
+                        <a href="https://tinyurl.com/yu38wufx" target="_blank">
+                            <h2 class="portfolio__title">Site headphone - Aprendizado</h2>
+                        </a>
+
+                        <a href="https://tinyurl.com/yu38wufx" class="portfolio__link" target="_blank"
+                            title="Acessar projeto">
+                            <i class='bx bx-link-alt'></i>
+                        </a>
+                    </div>
+                    <div class="portfolio__stack">
+                        <span>CSS</span>
+                        <span>HTML</span>
+                        <span>JAVASCRIPT</span>
+                    </div>
+                </div>
+
+                <div class="portfolio__content">
+                    <div class="portfolio__scroll img__spotify"></div>
+
+                    <div class="portfolio__data">
+                        <a>
+                            <h2 class="portfolio__title">Clone spotify - Aprendizado</h2>
+                        </a>
+
+                        <a class="portfolio__link" title="Passe o mouse sobre a imagem">
+                            <i class='bx bx-scan'></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio__stack">
+                        <span>REACT</span>
+                        <span>CSS</span>
+                        <span>NODEJS</span>
+                        <span>JAVASCRIPT</span>
+                    </div>
+                </div>
+
+                <div class="portfolio__content">
+                    <div class="portfolio__scroll img__locacao"></div>
+
+                    <div class="portfolio__data">
+                        <a>
+                            <h2 class="portfolio__title">Sistema locação materiais de construção</h2>
+                        </a>
+
+                        <a class="portfolio__link" title="Passe o mouse sobre a imagem">
+                            <i class='bx bx-scan'></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio__stack">
+                        <span>REACT</span>
+                        <span>MaterialUI</span>
+                        <span>NODEJS</span>
+                        <span>JAVASCRIPT</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACTME ===== -->
+        <section class="contact section container" id="contact">
+            <span class="section-subtitle">PARA PROJETOS</span>
+            <h2 class="section-title">Contate-me</h2>
+
+            <div class="box__contact box__animation">
+                <div class="contact__container contact__row">
+                    <div class="contact__info">
+                        <h2 class="box__title">Vamos trabalhar juntos!</h2>
+                        <p class="box__subtitle">Eleve sua marca comigo.</p>
+
+                        <ul class="contact__link">
+                            <li>
+                                <i class='bx bx-envelope contact__icon'></i>
+                                <div class="contact__data">
+                                    <span class="contact__title">E-mail</span>
+                                    <a class="contact__description">jeancarlobalduino@gmail.com</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <i class='bx bx-map contact__icon'></i>
+                                <div class="contact__data">
+                                    <span class="contact__title">Localização</span>
+                                    <a class="contact__description">Foz do Iguaçu/PR - Brasil</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <i class='bx bx-phone contact__icon'></i>
+                                <div class="contact__data">
+                                    <span class="contact__title">Contato</span>
+                                    <a class="contact__description" target="_blank"
+                                        href="https://wa.me/5545999050773?text=Olá,%20visitei%20o%20site%20e%20gostaria%20de%20realizar%20um%20orçamento!">
+                                        +55 (45) 99905-0773</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__row">
+                            <input type="text" name="name" required placeholder="Seu nome" class="contact__input">
+                            <input type="email" name="email" required placeholder="Seu e-mail" class="contact__input">
+                        </div>
+
+                        <div class="contact__row">
+                            <input type="text" name="subject" required placeholder="Assunto" class="contact__input">
+                            <input type="text" name="phone" id="phone" maxlength="15" placeholder="(99) 99999-9999"
+                                class="contact__input">
+                        </div>
+
+                        <textarea name="message" required cols="0" rows="7" placeholder="Sua mensagem"
+                            class="contact__input"></textarea>
+
+
+                        <button type="submit" class="contact__button">
+                            Enviar mensagem<i class='bx bx-mail-send'></i>
+                        </button>
+
+                        <p id="contact-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copy">&#169; 2025 Jean Carlo Balduino. Todos os direitos reservados</p>
+
+            <div class="social__link">
+                <a target="_blank" href="https://www.linkedin.com/in/jean-carlo-balduino-10a729b6/"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a target="_blank" href="https://github.com/JeanCarlo10"><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCROLL TOP ===== -->
+    <a href="#home" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <!-- ===== SCROLL ANIMATION ===== -->
+    <script src="./src/js/scrollreveal.min.js"></script>
+
+    <!-- ===== MAIN JS ===== -->
+    <script src="./src/js/main.js"></script>
+
+    <!-- ===== EMAIL JS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- ===== SEND EMAIL JS ===== -->
+    <script src="./src/js/sendMail.js"></script>
+</body>
+
+</html>

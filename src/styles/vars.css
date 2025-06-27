@@ -1,0 +1,130 @@
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/* ===== VARIABLES CSS ===== */
+
+:root {
+    /* ===== COLORS ===== */
+    --color-primary: #FF5722;
+    --color-primary-light: #F2613F;
+    --color-primary-dark: #481E14;
+    --color-white: #FFF;
+    --color-black: #000;
+    --color-black-secondary: #171717;
+    --color-gray: #BDBDBD;
+    --color-gray-secondary: #757575;
+    --color-gray-dark: #272727;
+    --transparent: transparent;
+    --color-success: #25D366;
+    
+    /* ===== COLOR RGBA ===== */
+    --color-primary-10: rgba(255, 87, 34, 0.10);
+
+    /* ===== COLOR GRADIENT ===== */
+    --gradient-box: radial-gradient(var(--color-primary), transparent, transparent);
+
+    /* ===== FONT AND TYPOGRAPHY ===== */
+    --body-font: "Glory", serif;
+    --second-font: "Fredoka", serif;
+
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --smaller-font-size: .75rem;
+    --small-font-size: .938rem;
+    --normal-font-size: 1rem;
+    --semi-normal-font-size: 1.25rem;
+    --medium-font-size: 1.5rem;
+    --semi-medium-font-size: 1.75rem;
+    --big-font-size: 2.5rem;
+    --biggest-font-size: 3.5rem;
+
+    /* ===== FONTWEIGHT ===== */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* ===== Margenes ===== */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /* ===== z index ===== */
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    /* ===== heigth ===== */
+    --header-height: 3rem;
+}
+
+/* ===== BASE ===== */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--color-black);
+    font-weight: var(--font-medium);
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== REUSABLE CSS CLASSES ===== */
+.container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.bd-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 3rem 1rem;
+}
+
+.main {
+    overflow: hidden;
+}

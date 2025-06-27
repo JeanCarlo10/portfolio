@@ -1,0 +1,117 @@
+@import './vars.css';
+
+/* For small devices */
+@media screen and (min-width: 340px) and (max-width: 575px) {
+    .container {
+        margin-inline: 1rem;
+    }
+
+    .home__title {
+        font-size: var(--medium-font-size);
+        line-height: 1rem;
+    }
+
+    .home__subtitle {
+        font-size: var(--small-font-size);
+    }
+
+    .box__contact {
+        padding: 1.5rem;
+    }   
+    
+    .background__btn {
+        bottom: .5rem;
+    }   
+
+    .contact_rotate__btn {
+        width: 11rem;
+        height: 11rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+    .container {
+        margin-inline: 2rem;
+    }
+
+    .portfolio__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home__title {
+        font-size: var(--semi-medium-font-size);
+        line-height: 1rem;
+    }
+
+    .home__subtitle {
+        font-size: var(--small-font-size);
+    }
+
+    .box__contact {
+        padding: 2.5rem
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding-top: 6rem;
+    }
+
+    .section-title {
+        margin-bottom: var(--mb-5);
+    }
+
+    .home__title {
+        font-size: var(--biggest-font-size);
+        line-height: 3.5rem;
+    }
+
+    .home__subtitle {
+        font-size: var(--semi-normal-font-size);
+    }
+
+    .about__description {
+        text-align: initial;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        margin-inline: 2rem;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+
+    .nav__menu {
+        width: initial;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 4rem;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+    .container {
+        margin-inline: auto;
+    }
+
+    .section {
+        padding-block: 7rem 2rem;
+    }
+}
